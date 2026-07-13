@@ -6,3 +6,8 @@ def teste(numero):
 numero = int(input())
 print(teste(numero))
 #testando um número postivo e um número negativo
+
+def teste_nome(nome):
+    nome_inverso = nome[::-1]
+    return nome_inverso
+print(teste_nome("João"))
