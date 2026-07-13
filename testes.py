@@ -5,3 +5,4 @@ def teste(numero):
         return "Numero não positivo"
 numero = int(input())
 print(teste(numero))
+#testando um número postivo e um número negativo
