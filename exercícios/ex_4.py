@@ -2,7 +2,7 @@ nome = input("Digite o seu nome:")
 idade = int(input("Digite a sua idade:"))
 espaco = False
 quantidade = 0
-if (nome and idade) == True:
+if nome and idade:
     print(f"Seu nome é {nome}")
     nome_invertido = nome[::-1]
     print(f"Seu nome invertido é {nome_invertido}")
