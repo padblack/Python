@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "Paulo",
+    "idade": 20,
+    "cor": "Preto"
+  },
+  {
+    "nome": "João",
+    "idade": 35,
+    "cor": "Branco"
+  },
+  {
+    "nome": "Jorge",
+    "idade": 27,
+    "cor": "Amarelo"
+  }
+]
