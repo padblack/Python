@@ -23,9 +23,9 @@ class Carro:
 
 
 class Motor:
-    def __init__(self, nome):
+    def __init__(self, nome, ano):
         self.nome = nome
-
+        self.ano = ano
 
 class Fabricante:
     def __init__(self, nome):
@@ -34,25 +34,25 @@ class Fabricante:
 
 fusca = Carro('Fusca')
 volkswagen = Fabricante('Volkswagen')
-motor_1_0 = Motor('1.0')
+motor_1_0 = Motor('1.0', 2010)
 fusca.fabricante = volkswagen
 fusca.motor = motor_1_0
-print(fusca.nome, fusca.fabricante.nome, fusca.motor.nome)
+print(fusca.nome, fusca.fabricante.nome, fusca.motor.nome, fusca.motor.ano)
 
-gol = Carro('Gol')
-gol.fabricante = volkswagen
-gol.motor = motor_1_0
-print(gol.nome, gol.fabricante.nome, gol.motor.nome)
+# gol = Carro('Gol')
+# gol.fabricante = volkswagen
+# gol.motor = motor_1_0
+# print(gol.nome, gol.fabricante.nome, gol.motor.nome)
 
-fiat_uno = Carro('Uno')
-fiat = Fabricante('Fiat')
-fiat_uno.fabricante = fiat
-fiat_uno.motor = motor_1_0
-print(fiat_uno.nome, fiat_uno.fabricante.nome, fiat_uno.motor.nome)
+# fiat_uno = Carro('Uno')
+# fiat = Fabricante('Fiat')
+# fiat_uno.fabricante = fiat
+# fiat_uno.motor = motor_1_0
+# print(fiat_uno.nome, fiat_uno.fabricante.nome, fiat_uno.motor.nome)
 
-focus = Carro('Focus Titanium')
-ford = Fabricante('Ford')
-motor_2_0 = Motor('2.0')
-focus.fabricante = ford
-focus.motor = motor_2_0
-print(focus.nome, focus.fabricante.nome, focus.motor.nome)
+# focus = Carro('Focus Titanium')
+# ford = Fabricante('Ford')
+# motor_2_0 = Motor('2.0')
+# focus.fabricante = ford
+# focus.motor = motor_2_0
+# print(focus.nome, focus.fabricante.nome, focus.motor.nome)
