@@ -16,6 +16,11 @@ class Conta(abc.ABC):
     def detalhes(self, msg = ''):
         print(f'O seu saldo é {self.saldo:.2f} {msg}')
 
+    def __repr__(self):
+        class_name = type(self).__name__
+        attrs = f'({self.agencia!r}, {self.conta!r}, {self.saldo!r})'
+        return f'{class_name}{attrs}'
+
     
 
 class Conta_Poupanca(Conta):
@@ -46,6 +51,13 @@ class Conta_Corrente(Conta):
 
         print("Não foi possível sacar")
         self.detalhes(f'(SAQUE NEGADO {valor})')
+
+    def __repr__(self):
+        class_name = type(self).__name__
+        attrs = f'({self.agencia!r}, {self.conta!r}, {self.saldo!r},'\
+            f'{self.limite!r})'
+        return f'{class_name}{attrs}'
+    
 
 if __name__ == '__main__':
     # cp1 = Conta_Poupanca(111, 222, 0)
